@@ -43,7 +43,7 @@ public class SeatHold {
         return this.isReserveConfirmed;
     }
 
-    public String getConfirmation() {
+    public String getConfirmationCode() {
         return this.confirmation;
     }
 

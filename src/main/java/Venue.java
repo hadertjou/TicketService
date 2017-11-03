@@ -54,10 +54,13 @@ public class Venue {
         SeatHold currentHold = this.holds.get(seatHoldID);
         //int seatsOffline = currentHold.getSeatCount();
         //seatCount-=seatsOffline;
-        currentHold.setReserveConfirmed(true);
-        String confirmation = currentHold.getConfirmation();
+        if(currentHold.getCustomerEmail() == customerEmail) {
+            currentHold.setReserveConfirmed(true);
+            String confirmation = currentHold.getConfirmationCode();
+            return confirmation;
+        }
 
-        return confirmation;
+        return null;
     }
 
     private void clearHolds(UUID seatHoldID, int number) {

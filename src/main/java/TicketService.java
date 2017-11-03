@@ -10,9 +10,8 @@ public class TicketService {
                 new java.util.TimerTask() {
                     @Override
                     public void run() {
-                        // your code here
                         System.out.println("EXECUTING TIMER TASK RESERVE SEAT");
-                        //venue.reserveSeats(sh.getSeatHoldID(), "sarah@gmail.com");
+                        venue.reserveSeats(sh.getSeatHoldID(), "sarah@gmail.com");
                         System.out.println(venue.numSeatsAvailable());
                         venue.printReservedSeats();
                     }
