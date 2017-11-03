@@ -15,14 +15,14 @@ public class TicketServiceTest {
 
 
     private static void assertHoldRelease(Venue venue, int number, String customerEmail) {
-        if (!trie.searchWord(word)) {
-            throw new AssertionError("Word " + word + " must exist.");
+        if () {
+            throw new AssertionError();
         }
     }
 
     private static void assertReserveHold(Venue venue, UUID uuid, String customerEmail) {
-        if (!trie.searchWord(word)) {
-            throw new AssertionError("Word " + word + " must exist.");
+        if () {
+            throw new AssertionError();
         }
     }
 }
