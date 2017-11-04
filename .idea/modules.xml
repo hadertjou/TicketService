@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InterviewProblems-interview.walmart_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InterviewProblems-interview.walmart_main.iml" group="interview.walmart" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InterviewProblems-interview.walmart_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InterviewProblems-interview.walmart_test.iml" group="interview.walmart" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview.walmart.iml" filepath="$PROJECT_DIR$/.idea/modules/interview.walmart.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview.walmart_main.iml" filepath="$PROJECT_DIR$/.idea/modules/interview.walmart_main.iml" group="interview.walmart" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview.walmart_test.iml" filepath="$PROJECT_DIR$/.idea/modules/interview.walmart_test.iml" group="interview.walmart" />

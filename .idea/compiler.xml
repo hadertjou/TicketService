@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="interview.walmart_main" target="1.8" />
       <module name="interview.walmart_test" target="1.8" />
+      <module name="InterviewProblems-interview.walmart_main" target="1.8" />
+      <module name="InterviewProblems-interview.walmart_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

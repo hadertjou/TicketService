@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TicketServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-11-04T03:25:49" hostname="DESKTOP-IGROI9T" time="0.003">
+  <properties/>
+  <testcase name="assertHoldRelease" classname="TicketServiceTest" time="0.002"/>
+  <testcase name="assertConfirmReserve" classname="TicketServiceTest" time="0.0"/>
+  <testcase name="assertBestSeatsObject" classname="TicketServiceTest" time="0.0"/>
+  <testcase name="assertReserveHold" classname="TicketServiceTest" time="0.0"/>
+  <system-out><![CDATA[96
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
