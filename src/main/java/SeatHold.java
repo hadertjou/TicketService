@@ -16,7 +16,7 @@ public class SeatHold {
         this.reservedSeats = seats;
         this.uuid = UUID.randomUUID();
         this.seatCount = seats.size();
-        this.confirmation = customerEmail + random.nextInt(); //email + random number
+        this.confirmation = customerEmail+"confirmed"; //email + random number
     }
 
     public String getCustomerEmail() {

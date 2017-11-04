@@ -1,8 +1,9 @@
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Venue {
     private boolean[][] seats;
-    private HashMap<UUID, SeatHold> holds;
+    private Map<UUID, SeatHold> holds;
     private int seatCount;
     private final long timeout = 3000;
 
@@ -10,7 +11,7 @@ public class Venue {
 
         this.seats = new boolean[rows][columns];
         this.seatCount = rows*columns;
-        holds = new HashMap<>();
+        holds = new ConcurrentHashMap<>();
     }
 
     public int numSeatsAvailable() {
@@ -50,8 +51,14 @@ public class Venue {
 
     public String reserveSeats(UUID seatHoldID, String customerEmail) {
 
+        SeatHold currentHold = null;
 
-        SeatHold currentHold = this.holds.get(seatHoldID);
+        currentHold = this.holds.get(seatHoldID);
+        if(currentHold == null)
+        {
+            return null;
+        }
+
         //int seatsOffline = currentHold.getSeatCount();
         //seatCount-=seatsOffline;
         if(currentHold.getCustomerEmail() == customerEmail) {
@@ -74,7 +81,7 @@ public class Venue {
             markSeatAvailable(s.row, s.column);
         }
         this.holds.remove(seatHoldID);
-        seatCount+=number;
+        this.seatCount+=number;
 
     }
 
@@ -120,6 +127,10 @@ public class Venue {
             }
         }
         return null;
+    }
+
+    public SeatHold getSeatHoldByID(UUID uuid) {
+        return this.holds.get(uuid);
     }
 
     public void printReservedSeats() {
