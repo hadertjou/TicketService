@@ -10,7 +10,7 @@ public class TicketServiceTest {
         TicketServiceTest.assertReserveHold(venue, "sarah@gmail.com");
         TicketServiceTest.assertBestSeatsObject(venue, sarah.getSeatHoldID(), "sarah@gmail.com");
         TicketServiceTest.assertConfirmReserve(venue, sarah.getSeatHoldID(), "sarah@gmail.com");
-        
+
 
         venue = new Venue(10, 10);
         TicketServiceTest.assertHoldRelease(venue, 5, "sarah@gmail.com");
